@@ -1,0 +1,81 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.calcBody{
+  /* border: red solid 1px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  width: 400px;
+  padding: 30px;
+  padding-top: 75px;
+  border-radius: 30px;
+}
+.calcScreen, .calcInput{
+  width: 100%;
+  font-size: 5rem;
+  height: 80px;
+  border: none;
+  text-align: right;
+  background-color: white;
+  color: black;
+  padding-right: 10px;
+  /* border: plum solid 1px; */
+}
+.calcDisplay{
+  /* border: orange solid 1px; */
+  height: 20%;
+  width: 90%;
+  margin: auto;
+
+}
+.calcButtonsContainer{
+  /* border: green solid 1px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px;
+  padding-bottom: 5px;
+}
+
+button{
+  height: 60px;
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 7px;
+  padding: 5px;
+  flex: 1 0 15%;
+}
+
+.clearButton{
+  background-color: red;
+  color: white;
+  font-size: 3rem;
+}
+
+button:hover{
+  background-color: grey;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
